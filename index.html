@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sathish | Portfolio</title>
+
+<style>
+:root{
+    --bg:#ffffff;
+    --text:#1d1d1f;
+    --subtle:#6e6e73;
+    --border:#e5e5e7;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",
+    "SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    background:whitesmoke;
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--border);
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+/* SIGNATURE LOGO */
+.signature-logo img{
+    height:70px;
+    width:auto;
+    display:block;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+    align-items:center;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:var(--subtle);
+    font-size:0.95rem;
+}
+
+nav ul li a:hover{
+    color:var(--text);
+}
+
+.resume-btn{
+    padding:8px 16px;
+    border-radius:20px;
+    border:1px solid var(--text);
+    font-size:0.9rem;
+    color:var(--text);
+    transition:0.3s ease;
+}
+
+.resume-btn:hover{
+    background:var(--text);
+    color:#fff;
+}
+
+/* HERO */
+.intro-header{
+    padding:220px 8% 140px;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.profile-photo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center 20%;
+    margin-bottom:35px;
+
+    border:4px solid #ffffff;
+    box-shadow:
+        0 0 0 1px black,
+        0 20px 40px grey;
+}
+
+.intro-header h1{
+    font-size:4rem;
+    font-weight:600;
+}
+
+.intro-header p{
+    margin-top:30px;
+    font-size:1.2rem;
+    color:var(--subtle);
+}
+
+/* SECTIONS */
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:100px 8%;
+}
+
+.section-title{
+    font-size:2rem;
+    font-weight:600;
+    margin-bottom:50px;
+}
+
+/* EXPERIENCE */
+.experience-block{
+    margin-bottom:50px;
+    padding-bottom:30px;
+    border-bottom:1px solid var(--border);
+}
+
+.experience-header{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.job-title{
+    font-weight:600;
+    font-size:1.1rem;
+}
+
+.company{
+    color:var(--subtle);
+    margin-top:4px;
+}
+
+.duration{
+    color:var(--subtle);
+}
+
+.experience-description{
+    margin-top:15px;
+    color:var(--subtle);
+    max-width:700px;
+}
+
+/* TECHNICAL */
+.skill-row{
+    display:flex;
+    justify-content:space-between;
+    padding:25px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.skill-title{
+    font-weight:600;
+    min-width:200px;
+}
+
+.skill-items{
+    color:var(--subtle);
+}
+
+/* CONTACT */
+.contact p{
+    margin-bottom:12px;
+    color:var(--subtle);
+}
+
+.contact a{
+    color:var(--text);
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:60px;
+    color:var(--subtle);
+    border-top:1px solid var(--border);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+    .intro-header h1{
+        font-size:2.8rem;
+    }
+
+    .profile-photo{
+        width:120px;
+        height:120px;
+    }
+
+    .skill-row{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .experience-header{
+        flex-direction:column;
+        gap:6px;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<nav>
+    <a href="#top" class="signature-logo">
+        <img src="Sathish_Signature.jpg" alt="Sathish Signature">
+    </a>
+    <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Technical</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="Sathish_Resume_2026.pdf" download class="resume-btn">
+                Download Resume
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<section class="intro-header">
+    <img src="sathish.jpg" alt="Sathish" class="profile-photo">
+    <h1>Sathish</h1>
+    <p>
+        Analytical professional transitioning from Mechanical Engineering to Software
+        Development. Skilled in applying engineering logic to build scalable web applications.
+        Proficient in Python, Java, and modern web stacks with strong focus on Data Structures and SDLC.
+    </p>
+</section>
+
+<section id="experience">
+    <div class="section-title">Experience</div>
+
+    <div class="experience-block">
+        <div class="experience-header">
+            <div>
+                <div class="job-title">Industrial Automation Engineer</div>
+                <div class="company">Formtech Industries</div>
+            </div>
+            <div class="duration">2021 — Present</div>
+        </div>
+        <div class="experience-description">
+            Designed SCADA automation systems and optimized industrial workflows using structured SDLC methodologies.
+        </div>
+    </div>
+
+    <div class="experience-block">
+        <div class="experience-header">
+            <div>
+                <div class="job-title">Industrial Engineer</div>
+                <div class="company">Formtech Industries</div>
+            </div>
+            <div class="duration">2019 — 2021</div>
+        </div>
+        <div class="experience-description">
+            Led validation processes and improved operational efficiency using engineering best practices.
+        </div>
+    </div>
+
+</section>
+
+<section id="skills">
+    <div class="section-title">Technical Expertise</div>
+
+    <div class="skill-row">
+        <div class="skill-title">Languages</div>
+        <div class="skill-items">Python · Java · JavaScript · SQL · C · C++</div>
+    </div>
+
+    <div class="skill-row">
+        <div class="skill-title">Frameworks</div>
+        <div class="skill-items">React · Node.js · HTML5 · CSS3</div>
+    </div>
+
+    <div class="skill-row">
+        <div class="skill-title">Concepts</div>
+        <div class="skill-items">Data Structures · System Design · SDLC · Agile · Git</div>
+    </div>
+
+</section>
+
+<section id="contact">
+    <div class="section-title">Contact</div>
+    <div class="contact">
+        <p>Email: sathishr2111@gmail.com</p>
+        <p>Phone: +91 9962201208</p>
+        <p>Ambattur, Chennai, India</p>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/sathish-r-35a6473a7/" target="_blank">
+                linkedin.com/in/sathish-r-35a6473a7
+            </a>
+        </p>
+    </div>
+</section>
+
+<footer>
+© 2026 | Sathish | Portfolio
+</footer>
+
+</body>
+</html>
